@@ -1,0 +1,14 @@
+<%= form_for @school_class do |f|%>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :room_number %>
+    <%= f.text_field :room_number%>
+    <%= f.submit %>
+    <%end%>
+
+    <div>
+
+<button> <%= link_to 'class', school_class_path(@school_class) %> </button>  
+<button> <%= link_to 'index', school_classes_path %> </button>
+
+</div>
