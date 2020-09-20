@@ -2,7 +2,7 @@ class StudentsController < ApplicationController
     before_action :find, only: [:show, :edit, :update]
     
     def index
-        @students = Student.All 
+        @students = Student.all 
     end
 
     def show
@@ -30,6 +30,6 @@ class StudentsController < ApplicationController
     def find
         @student = Student.find(params[:id])
     end
-    
+
 end
         
