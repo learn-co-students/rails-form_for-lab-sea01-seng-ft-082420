@@ -1,0 +1,3 @@
+<% @school_classes.each do |clss| %>
+    <h1><%= link_to clss.to_s, school_class_path(clss) %></h1>
+<% end %>
